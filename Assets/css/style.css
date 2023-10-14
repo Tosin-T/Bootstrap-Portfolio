@@ -229,26 +229,39 @@ font-size: 3vh;
   font-size: 1.25vw;
 }
 
-
-
-.work-collection {
-  width: 90%;
-  display: flex;
-  margin: auto;
-  
+.card{
+  max-height: 30vh;
+  max-width: 60vh;
+  object-fit: scale-down 0.5%;
+  transition: transform .2s;
+  margin:  auto;
+  overflow: hidden;
+  align-items: center;
+  justify-items:center
 }
-
+h6{
+  display: flex;
+  justify-content: center;
+}
 .work-grid {
+  display: flex;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
   gap: 16px;
-  padding-left: 2vw;
+  padding-left: 50vw;
   padding-right: 2vw;
   overflow: hidden;
+  justify-content: center;
   
 }
+.work-card{
+  align-items: center;
+  background-color: var(--colour3);
+}
 
+.project-1{
+  justify-items: space-between; 
+}
 .grid-item {
   padding: 20px;
   font-size: 3vh;
@@ -258,16 +271,14 @@ font-size: 3vh;
 }
 
 .grid-item img{
-  display: block;
   max-height: 40vh;
   max-width: 40vh;
   object-fit: scale-down 0.5%;
   transition: transform .2s;
   margin: 0 auto;
   overflow: hidden;
-  
 }
-.grid-item img:hover{
+.card-image-top img:hover{
   opacity: 0.5;
   transform: scale(1.1); 
 }
