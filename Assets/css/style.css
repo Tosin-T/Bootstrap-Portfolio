@@ -80,15 +80,22 @@ nav ul {
   align-items: center;
   justify-content: space-between;
 }
-
+.row>*{
+  padding: 0%;
+}
 .project-style {
   text-decoration: none;
   color: white;
+  
 }
 .profile p{
   color: #000;
 }
+.navbar { padding-bottom:0vh;}
 
+.nav-link{
+  color: var(--colour2);
+}
 .navbar-nav a:hover {
   color: var(--colour1);
   
@@ -132,21 +139,42 @@ nav li{
 
 
 .title-section {
-  width: 10.52%;
+  width: 10.5vw;
   display: flex;
   text-align: center;
   border-right: 2px solid black;
   color: var(--colour1);
 }
 .title-section-about-me{
-  width:30%;
+  
   color: var(--colour1);
 }
 .title-section h2{
+  height: 14vw;
   font-size: 2vw;
-  margin:auto;
   transform: rotate(-90deg);
   text-transform: uppercase;
+  width:auto;
+}
+
+
+
+.title-section-left-update{
+  display: flex;
+  width: 10vw;
+  font-size: 2vw;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.title-section-left-update h2 {
+  transform: rotate(-90deg);
+  height: 7vw;
+  margin: auto;
+}
+
+.title-section-right-update{
+  width: 90vw;
 }
 
 #about{
@@ -175,7 +203,6 @@ object-fit: contain;
 }
 .profile {
   background-color:var(--colour2);
-  margin-top: -12px;
   padding: 1.75vw;
   height: 30%;
   text-align: center;
@@ -230,14 +257,21 @@ font-size: 3vh;
 }
 
 .card{
-  max-height: 30vh;
-  max-width: 60vh;
+  max-height: 50vh;
+  max-width: 100vh;
   object-fit: scale-down 0.5%;
   transition: transform .2s;
   margin:  auto;
-  overflow: hidden;
   align-items: center;
-  justify-items:center
+  justify-items:center;
+  background-color:var(--colour2);
+  
+}
+.card-title {
+  color: #000;
+}
+.card-sub{
+  color: #000;
 }
 h6{
   display: flex;
@@ -246,13 +280,12 @@ h6{
 .work-grid {
   display: flex;
   width: 100%;
-  display: grid;
   gap: 16px;
-  padding-left: 50vw;
+  padding-left: 10vw;
   padding-right: 2vw;
-  overflow: hidden;
+  overflow: auto;
   justify-content: center;
-  
+  border-top: 2px solid #000;
 }
 .work-card{
   align-items: center;
@@ -260,7 +293,7 @@ h6{
 }
 
 .project-1{
-  justify-items: space-between; 
+  
 }
 .grid-item {
   padding: 20px;
@@ -289,6 +322,14 @@ h6{
 }
 .grid-item2 a{
   text-decoration: none;
+}
+
+.row-1-project{
+  width: 65%;
+}
+
+.row-2-project{
+  width: 100%;
 }
 
 
